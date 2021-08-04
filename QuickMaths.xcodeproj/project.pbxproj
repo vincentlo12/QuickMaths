@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EC059EFFE60B0AF09A85E95 /* Pods_QuickMaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20921A308419D74A1687434 /* Pods_QuickMaths.framework */; };
+		CE1A291B268D128F003FA9D7 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A291A268D128F003FA9D7 /* StatsViewController.swift */; };
+		CE1A291E268EC60E003FA9D7 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A291D268EC60E003FA9D7 /* ScoreManager.swift */; };
+		CE3243692677DA0E0058DCDB /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3243682677DA0E0058DCDB /* CreditsViewController.swift */; };
+		CE32436E267AFBFD0058DCDB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE32436D267AFBFD0058DCDB /* TestViewController.swift */; };
+		CE324374267C4CDB0058DCDB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE324373267C4CDB0058DCDB /* ResultViewController.swift */; };
+		CE324377267C52030058DCDB /* QuestionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE324376267C52020058DCDB /* QuestionGenerator.swift */; };
+		CE79EB3526AA728B00BCB32E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79EB3426AA728B00BCB32E /* Extension.swift */; };
+		CE79EB3C26AA7ED100BCB32E /* cheers1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE79EB3B26AA7ED100BCB32E /* cheers1.wav */; };
+		CEB170DE266C0D5D005DCF2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB170DD266C0D5D005DCF2C /* AppDelegate.swift */; };
+		CEB170E0266C0D5D005DCF2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB170DF266C0D5D005DCF2C /* SceneDelegate.swift */; };
+		CEB170E2266C0D5D005DCF2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB170E1266C0D5D005DCF2C /* ViewController.swift */; };
+		CEB170E5266C0D5D005DCF2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB170E3266C0D5D005DCF2C /* Main.storyboard */; };
+		CEB170E7266C0D5E005DCF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB170E6266C0D5E005DCF2C /* Assets.xcassets */; };
+		CEB170EA266C0D5E005DCF2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB170E8266C0D5E005DCF2C /* LaunchScreen.storyboard */; };
+		CEB1711C266DC61D005DCF2C /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1711B266DC61D005DCF2C /* LessonsViewController.swift */; };
+		CEB1712A266F0205005DCF2C /* PickPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB17129266F0205005DCF2C /* PickPracticeViewController.swift */; };
+		CEB1712D266F04AE005DCF2C /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1712C266F04AE005DCF2C /* PracticeViewController.swift */; };
+		CED65FC926AB6A320082385B /* wonwon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CED65FC826AB6A320082385B /* wonwon.mp3 */; };
+		CED65FCD26AE23AD0082385B /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED65FCC26AE23AD0082385B /* GIFViewController.swift */; };
+		CED65FD026AE25F10082385B /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED65FCF26AE25F10082385B /* Gif.swift */; };
+		CED65FE626AE31B30082385B /* quickmathsgif.gif in Resources */ = {isa = PBXBuildFile; fileRef = CED65FE526AE31B30082385B /* quickmathsgif.gif */; };
+		CED65FEC26AE32C90082385B /* minioncongrats.gif in Resources */ = {isa = PBXBuildFile; fileRef = CED65FEB26AE32C90082385B /* minioncongrats.gif */; };
+		CED65FEE26AE33A20082385B /* UDaddupto10V2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED65FD926AE30820082385B /* UDaddupto10V2.mp4 */; };
+		CED65FEF26AE33A20082385B /* GCDV2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED65FDB26AE30B40082385B /* GCDV2.mp4 */; };
+		CED65FF126AE33A20082385B /* 101V2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED65FDF26AE31070082385B /* 101V2.mp4 */; };
+		CED65FF226AE33A20082385B /* Unitsdigit5squaredV2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED65FE126AE31170082385B /* Unitsdigit5squaredV2.mp4 */; };
+		CED65FF326AE33A20082385B /* diffofsquaresV2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED65FE326AE31280082385B /* diffofsquaresV2.mp4 */; };
+		CED65FFE26AE3AED0082385B /* diffofsquaresV3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED65FF726AE34160082385B /* diffofsquaresV3.mp4 */; };
+		CED6600026AE3AED0082385B /* LCMV3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED65FFA26AE34520082385B /* LCMV3.mp4 */; };
+		CED6600326AE3BBD0082385B /* Multiplyby11V2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED6600226AE3BA90082385B /* Multiplyby11V2.mp4 */; };
+		CED6600626AE53D80082385B /* sadcat.gif in Resources */ = {isa = PBXBuildFile; fileRef = CED6600526AE53D80082385B /* sadcat.gif */; };
+		CED6600926AE54D90082385B /* inspire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CED6600826AE54D90082385B /* inspire.mp3 */; };
+		CED6600D26AE58150082385B /* rainbow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CED6600C26AE58150082385B /* rainbow.mp3 */; };
+		CED6601126AF28DD0082385B /* mixednumbersV2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED6601026AF28C00082385B /* mixednumbersV2.mp4 */; };
+		CED6601426B1D3850082385B /* mathfun.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CED6601326B1D3850082385B /* mathfun.mp3 */; };
+		CED6601A26B36F5F0082385B /* divideV3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED6601826B36F270082385B /* divideV3.mp4 */; };
+		CED6601B26B36F5F0082385B /* repeatingdecimals.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED6601926B36F3A0082385B /* repeatingdecimals.mp4 */; };
+		CED6601F26B36FA10082385B /* multiplyby9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED6601E26B36F860082385B /* multiplyby9.mp4 */; };
+		CED6602026B36FA10082385B /* distribute.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CED6601D26B36F810082385B /* distribute.mp4 */; };
+		CED6602326B3C1E20082385B /* mathfun1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CED6602226B3C1E20082385B /* mathfun1.mp3 */; };
+		CED6602626B4772A0082385B /* summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CED6602526B4772A0082385B /* summer.mp3 */; };
+		CED6602A26B477440082385B /* energy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CED6602926B477440082385B /* energy.mp3 */; };
+		CED6602D26B477760082385B /* energykids.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CED6602C26B477760082385B /* energykids.mp3 */; };
+		CED6603026B4784D0082385B /* TestMainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6602F26B4784D0082385B /* TestMainMenuViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		86DDB6B83993910CFDC1FD5B /* Pods-QuickMaths.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickMaths.release.xcconfig"; path = "Target Support Files/Pods-QuickMaths/Pods-QuickMaths.release.xcconfig"; sourceTree = "<group>"; };
+		A20921A308419D74A1687434 /* Pods_QuickMaths.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickMaths.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1A291A268D128F003FA9D7 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		CE1A291D268EC60E003FA9D7 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		CE3243682677DA0E0058DCDB /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		CE32436D267AFBFD0058DCDB /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		CE324373267C4CDB0058DCDB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		CE324376267C52020058DCDB /* QuestionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGenerator.swift; sourceTree = "<group>"; };
+		CE79EB3426AA728B00BCB32E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CE79EB3B26AA7ED100BCB32E /* cheers1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cheers1.wav; sourceTree = "<group>"; };
+		CEB170DA266C0D5D005DCF2C /* QuickMaths.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickMaths.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB170DD266C0D5D005DCF2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEB170DF266C0D5D005DCF2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEB170E1266C0D5D005DCF2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEB170E4266C0D5D005DCF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEB170E6266C0D5E005DCF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEB170E9266C0D5E005DCF2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEB170EB266C0D5E005DCF2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB1711B266DC61D005DCF2C /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
+		CEB17129266F0205005DCF2C /* PickPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPracticeViewController.swift; sourceTree = "<group>"; };
+		CEB1712C266F04AE005DCF2C /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		CED65FC826AB6A320082385B /* wonwon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wonwon.mp3; sourceTree = "<group>"; };
+		CED65FCC26AE23AD0082385B /* GIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
+		CED65FCF26AE25F10082385B /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		CED65FD926AE30820082385B /* UDaddupto10V2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UDaddupto10V2.mp4; sourceTree = "<group>"; };
+		CED65FDB26AE30B40082385B /* GCDV2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GCDV2.mp4; sourceTree = "<group>"; };
+		CED65FDF26AE31070082385B /* 101V2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 101V2.mp4; sourceTree = "<group>"; };
+		CED65FE126AE31170082385B /* Unitsdigit5squaredV2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Unitsdigit5squaredV2.mp4; sourceTree = "<group>"; };
+		CED65FE326AE31280082385B /* diffofsquaresV2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = diffofsquaresV2.mp4; path = ../../../Downloads/diffofsquaresV2.mp4; sourceTree = "<group>"; };
+		CED65FE526AE31B30082385B /* quickmathsgif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = quickmathsgif.gif; sourceTree = "<group>"; };
+		CED65FEB26AE32C90082385B /* minioncongrats.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = minioncongrats.gif; sourceTree = "<group>"; };
+		CED65FF726AE34160082385B /* diffofsquaresV3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = diffofsquaresV3.mp4; path = ../../../Downloads/diffofsquaresV3.mp4; sourceTree = "<group>"; };
+		CED65FFA26AE34520082385B /* LCMV3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = LCMV3.mp4; sourceTree = "<group>"; };
+		CED6600226AE3BA90082385B /* Multiplyby11V2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Multiplyby11V2.mp4; sourceTree = "<group>"; };
+		CED6600526AE53D80082385B /* sadcat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sadcat.gif; sourceTree = "<group>"; };
+		CED6600826AE54D90082385B /* inspire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = inspire.mp3; sourceTree = "<group>"; };
+		CED6600C26AE58150082385B /* rainbow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rainbow.mp3; sourceTree = "<group>"; };
+		CED6601026AF28C00082385B /* mixednumbersV2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = mixednumbersV2.mp4; path = ../../../Downloads/mixednumbersV2.mp4; sourceTree = "<group>"; };
+		CED6601326B1D3850082385B /* mathfun.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mathfun.mp3; sourceTree = "<group>"; };
+		CED6601826B36F270082385B /* divideV3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = divideV3.mp4; sourceTree = "<group>"; };
+		CED6601926B36F3A0082385B /* repeatingdecimals.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = repeatingdecimals.mp4; path = ../../../Downloads/repeatingdecimals.mp4; sourceTree = "<group>"; };
+		CED6601D26B36F810082385B /* distribute.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = distribute.mp4; sourceTree = "<group>"; };
+		CED6601E26B36F860082385B /* multiplyby9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = multiplyby9.mp4; sourceTree = "<group>"; };
+		CED6602226B3C1E20082385B /* mathfun1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mathfun1.mp3; sourceTree = "<group>"; };
+		CED6602526B4772A0082385B /* summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = summer.mp3; sourceTree = "<group>"; };
+		CED6602926B477440082385B /* energy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = energy.mp3; sourceTree = "<group>"; };
+		CED6602C26B477760082385B /* energykids.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = energykids.mp3; sourceTree = "<group>"; };
+		CED6602F26B4784D0082385B /* TestMainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMainMenuViewController.swift; sourceTree = "<group>"; };
+		D60AB6FA4FB9927D5EFE6289 /* Pods-QuickMaths.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickMaths.debug.xcconfig"; path = "Target Support Files/Pods-QuickMaths/Pods-QuickMaths.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB170D7266C0D5D005DCF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC059EFFE60B0AF09A85E95 /* Pods_QuickMaths.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23CE80F590D1E86808A4593B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A20921A308419D74A1687434 /* Pods_QuickMaths.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		437B72BC4200F4F05AF9ED77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D60AB6FA4FB9927D5EFE6289 /* Pods-QuickMaths.debug.xcconfig */,
+				86DDB6B83993910CFDC1FD5B /* Pods-QuickMaths.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CEB170D1266C0D5D005DCF2C = {
+			isa = PBXGroup;
+			children = (
+				CEB170DC266C0D5D005DCF2C /* QuickMaths */,
+				CEB170DB266C0D5D005DCF2C /* Products */,
+				437B72BC4200F4F05AF9ED77 /* Pods */,
+				23CE80F590D1E86808A4593B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB170DB266C0D5D005DCF2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB170DA266C0D5D005DCF2C /* QuickMaths.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB170DC266C0D5D005DCF2C /* QuickMaths */ = {
+			isa = PBXGroup;
+			children = (
+				CEB170DD266C0D5D005DCF2C /* AppDelegate.swift */,
+				CEB170DF266C0D5D005DCF2C /* SceneDelegate.swift */,
+				CEB170E1266C0D5D005DCF2C /* ViewController.swift */,
+				CEB170E3266C0D5D005DCF2C /* Main.storyboard */,
+				CEB170E6266C0D5E005DCF2C /* Assets.xcassets */,
+				CEB170E8266C0D5E005DCF2C /* LaunchScreen.storyboard */,
+				CEB170EB266C0D5E005DCF2C /* Info.plist */,
+				CEB1711B266DC61D005DCF2C /* LessonsViewController.swift */,
+				CED65FD926AE30820082385B /* UDaddupto10V2.mp4 */,
+				CED65FDB26AE30B40082385B /* GCDV2.mp4 */,
+				CED6601E26B36F860082385B /* multiplyby9.mp4 */,
+				CED6601D26B36F810082385B /* distribute.mp4 */,
+				CED65FF726AE34160082385B /* diffofsquaresV3.mp4 */,
+				CED6602226B3C1E20082385B /* mathfun1.mp3 */,
+				CED65FDF26AE31070082385B /* 101V2.mp4 */,
+				CED6601826B36F270082385B /* divideV3.mp4 */,
+				CED6601926B36F3A0082385B /* repeatingdecimals.mp4 */,
+				CED6601026AF28C00082385B /* mixednumbersV2.mp4 */,
+				CED6600226AE3BA90082385B /* Multiplyby11V2.mp4 */,
+				CED65FFA26AE34520082385B /* LCMV3.mp4 */,
+				CED65FE126AE31170082385B /* Unitsdigit5squaredV2.mp4 */,
+				CED6601326B1D3850082385B /* mathfun.mp3 */,
+				CED6600C26AE58150082385B /* rainbow.mp3 */,
+				CED6600826AE54D90082385B /* inspire.mp3 */,
+				CED6602526B4772A0082385B /* summer.mp3 */,
+				CED6602926B477440082385B /* energy.mp3 */,
+				CED6602C26B477760082385B /* energykids.mp3 */,
+				CED65FE326AE31280082385B /* diffofsquaresV2.mp4 */,
+				CED65FE526AE31B30082385B /* quickmathsgif.gif */,
+				CED65FEB26AE32C90082385B /* minioncongrats.gif */,
+				CED65FC826AB6A320082385B /* wonwon.mp3 */,
+				CE79EB3B26AA7ED100BCB32E /* cheers1.wav */,
+				CED6600526AE53D80082385B /* sadcat.gif */,
+				CEB17129266F0205005DCF2C /* PickPracticeViewController.swift */,
+				CEB1712C266F04AE005DCF2C /* PracticeViewController.swift */,
+				CE3243682677DA0E0058DCDB /* CreditsViewController.swift */,
+				CE32436D267AFBFD0058DCDB /* TestViewController.swift */,
+				CE324373267C4CDB0058DCDB /* ResultViewController.swift */,
+				CE324376267C52020058DCDB /* QuestionGenerator.swift */,
+				CE1A291A268D128F003FA9D7 /* StatsViewController.swift */,
+				CE1A291D268EC60E003FA9D7 /* ScoreManager.swift */,
+				CE79EB3426AA728B00BCB32E /* Extension.swift */,
+				CED65FCC26AE23AD0082385B /* GIFViewController.swift */,
+				CED65FCF26AE25F10082385B /* Gif.swift */,
+				CED6602F26B4784D0082385B /* TestMainMenuViewController.swift */,
+			);
+			path = QuickMaths;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB170D9266C0D5D005DCF2C /* QuickMaths */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB170EE266C0D5E005DCF2C /* Build configuration list for PBXNativeTarget "QuickMaths" */;
+			buildPhases = (
+				8426D39D0CAF3484F49EE35E /* [CP] Check Pods Manifest.lock */,
+				CEB170D6266C0D5D005DCF2C /* Sources */,
+				CEB170D7266C0D5D005DCF2C /* Frameworks */,
+				CEB170D8266C0D5D005DCF2C /* Resources */,
+				23EFB5DBD82D87D770167C14 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickMaths;
+			productName = QuickMaths;
+			productReference = CEB170DA266C0D5D005DCF2C /* QuickMaths.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB170D2266C0D5D005DCF2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CEB170D9266C0D5D005DCF2C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CEB170D5266C0D5D005DCF2C /* Build configuration list for PBXProject "QuickMaths" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB170D1266C0D5D005DCF2C;
+			productRefGroup = CEB170DB266C0D5D005DCF2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB170D9266C0D5D005DCF2C /* QuickMaths */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB170D8266C0D5D005DCF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED6602A26B477440082385B /* energy.mp3 in Resources */,
+				CED6601F26B36FA10082385B /* multiplyby9.mp4 in Resources */,
+				CED6602026B36FA10082385B /* distribute.mp4 in Resources */,
+				CED6602326B3C1E20082385B /* mathfun1.mp3 in Resources */,
+				CED6601A26B36F5F0082385B /* divideV3.mp4 in Resources */,
+				CED6601B26B36F5F0082385B /* repeatingdecimals.mp4 in Resources */,
+				CED6601426B1D3850082385B /* mathfun.mp3 in Resources */,
+				CED6601126AF28DD0082385B /* mixednumbersV2.mp4 in Resources */,
+				CED6602626B4772A0082385B /* summer.mp3 in Resources */,
+				CED6600326AE3BBD0082385B /* Multiplyby11V2.mp4 in Resources */,
+				CED65FFE26AE3AED0082385B /* diffofsquaresV3.mp4 in Resources */,
+				CED6600026AE3AED0082385B /* LCMV3.mp4 in Resources */,
+				CED65FEE26AE33A20082385B /* UDaddupto10V2.mp4 in Resources */,
+				CED6602D26B477760082385B /* energykids.mp3 in Resources */,
+				CED65FEF26AE33A20082385B /* GCDV2.mp4 in Resources */,
+				CED6600626AE53D80082385B /* sadcat.gif in Resources */,
+				CED6600D26AE58150082385B /* rainbow.mp3 in Resources */,
+				CED65FF126AE33A20082385B /* 101V2.mp4 in Resources */,
+				CED65FF226AE33A20082385B /* Unitsdigit5squaredV2.mp4 in Resources */,
+				CED65FF326AE33A20082385B /* diffofsquaresV2.mp4 in Resources */,
+				CE79EB3C26AA7ED100BCB32E /* cheers1.wav in Resources */,
+				CEB170EA266C0D5E005DCF2C /* LaunchScreen.storyboard in Resources */,
+				CED6600926AE54D90082385B /* inspire.mp3 in Resources */,
+				CED65FC926AB6A320082385B /* wonwon.mp3 in Resources */,
+				CED65FE626AE31B30082385B /* quickmathsgif.gif in Resources */,
+				CEB170E7266C0D5E005DCF2C /* Assets.xcassets in Resources */,
+				CED65FEC26AE32C90082385B /* minioncongrats.gif in Resources */,
+				CEB170E5266C0D5D005DCF2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23EFB5DBD82D87D770167C14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickMaths/Pods-QuickMaths-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickMaths/Pods-QuickMaths-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickMaths/Pods-QuickMaths-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8426D39D0CAF3484F49EE35E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickMaths-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB170D6266C0D5D005DCF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1A291E268EC60E003FA9D7 /* ScoreManager.swift in Sources */,
+				CEB1711C266DC61D005DCF2C /* LessonsViewController.swift in Sources */,
+				CE1A291B268D128F003FA9D7 /* StatsViewController.swift in Sources */,
+				CE324377267C52030058DCDB /* QuestionGenerator.swift in Sources */,
+				CE3243692677DA0E0058DCDB /* CreditsViewController.swift in Sources */,
+				CE32436E267AFBFD0058DCDB /* TestViewController.swift in Sources */,
+				CEB170E2266C0D5D005DCF2C /* ViewController.swift in Sources */,
+				CEB170DE266C0D5D005DCF2C /* AppDelegate.swift in Sources */,
+				CED6603026B4784D0082385B /* TestMainMenuViewController.swift in Sources */,
+				CEB1712D266F04AE005DCF2C /* PracticeViewController.swift in Sources */,
+				CE79EB3526AA728B00BCB32E /* Extension.swift in Sources */,
+				CEB1712A266F0205005DCF2C /* PickPracticeViewController.swift in Sources */,
+				CED65FCD26AE23AD0082385B /* GIFViewController.swift in Sources */,
+				CEB170E0266C0D5D005DCF2C /* SceneDelegate.swift in Sources */,
+				CE324374267C4CDB0058DCDB /* ResultViewController.swift in Sources */,
+				CED65FD026AE25F10082385B /* Gif.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEB170E3266C0D5D005DCF2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB170E4266C0D5D005DCF2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEB170E8266C0D5E005DCF2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB170E9266C0D5E005DCF2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB170EC266C0D5E005DCF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEB170ED266C0D5E005DCF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB170EF266C0D5E005DCF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D60AB6FA4FB9927D5EFE6289 /* Pods-QuickMaths.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W62UNRU3SU;
+				INFOPLIST_FILE = QuickMaths/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Vincent.QuickMathsbyMathJediV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB170F0266C0D5E005DCF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86DDB6B83993910CFDC1FD5B /* Pods-QuickMaths.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W62UNRU3SU;
+				INFOPLIST_FILE = QuickMaths/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Vincent.QuickMathsbyMathJediV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB170D5266C0D5D005DCF2C /* Build configuration list for PBXProject "QuickMaths" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB170EC266C0D5E005DCF2C /* Debug */,
+				CEB170ED266C0D5E005DCF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB170EE266C0D5E005DCF2C /* Build configuration list for PBXNativeTarget "QuickMaths" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB170EF266C0D5E005DCF2C /* Debug */,
+				CEB170F0266C0D5E005DCF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB170D2266C0D5D005DCF2C /* Project object */;
+}
