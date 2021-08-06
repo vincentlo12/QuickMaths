@@ -18,7 +18,7 @@ class TestViewController: UIViewController {
     var timer: Timer?
     var prev = ""
     var score = 0
-    
+    var flag = false
     override func viewDidLoad() {
         super.viewDidLoad()
         ScoreManager.scoreManager.saveData()
@@ -47,15 +47,19 @@ class TestViewController: UIViewController {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.cnt += 1
             if (self.cnt == 300){ //change later
-                ScoreManager.scoreManager.score += [Double(self.score)]
-                ScoreManager.scoreManager.saveData()
-                timer.invalidate()
-                self.timerLbl.text = "Time's up!"
-               
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute:{
-                    
-                    self.performSegue(withIdentifier: "GoToResult", sender: self)
-                } )
+                if self.flag == false
+                {
+                    ScoreManager.scoreManager.score += [Double(self.score)]
+                    ScoreManager.scoreManager.saveData()
+                    timer.invalidate()
+                    self.timerLbl.text = "Time's up!"
+                   
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute:{
+                        
+                        self.performSegue(withIdentifier: "GoToResult", sender: self)
+                    } )
+                }
+                
                 
             }
             else {
@@ -76,7 +80,7 @@ class TestViewController: UIViewController {
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         alertVC.addAction(okAction)
         alertVC.addAction(cancelAction)
-        timer?.invalidate()
+        flag = true
         self.present(alertVC, animated: true, completion: nil)
     }
     
@@ -125,6 +129,7 @@ class TestViewController: UIViewController {
 extension TestViewController: UITextFieldDelegate{
     public func textFieldShouldReturn(_ textView: UITextField) -> Bool {
         textView.resignFirstResponder()
+        answerInputBoxTextField.placeholder = "Answer"
         instructionsLbl.isHidden = true
         if answerInputBoxTextField.text == "" {
             answerInputBoxTextField.placeholder = "Please type something"
